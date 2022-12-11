@@ -1,0 +1,9 @@
+{
+    "ping" : "Hey {str.1}, la latence est de `{int.1} ms`",
+    "register.disable" : "Ho non {str.1}, il semeblerait que tu ne puisses pas t'inscrire maintenant :andgel_hum:", 
+    "register.successful" : "Wahou ! Tu es inscris :porcq_happy:", 
+    "distribution.successful" : "{str.1}, la distribution des rôles vient d'être faîte :ju_hey:", 
+    "secret.who" : "Ce Noël vous enverrez un message à {str.1}", 
+    "write.disable" : "Ho non {str.1}, il semblerait que tu ne puisses pas savoir ton destinataire et donc que tu ne puisses pas lui écrire :andgel_hum:", 
+    "read.disable" : "Ho non {str.1}, il semblerait que tu ne puisses pas connaître ton message pour l'instant :andgel_hum:" 
+}
