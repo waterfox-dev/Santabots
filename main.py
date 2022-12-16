@@ -8,6 +8,7 @@ from discord.ext import commands
 from discord.ext.commands.context import Context
 
 import discord
+import sys
 
 
 intents = discord.Intents.default()
@@ -131,5 +132,5 @@ async def changefunc(ctx: Context, f_name, f_value) :
     settings.change_functionnalities(f_name, bool(int(f_value)))
     await ctx.send(f"Value of `{f_name}` is now on {settings.functionnalities[f_name]}")
 
-
+print("Version of python : " + str(sys.version_info))
 bot.run(login)

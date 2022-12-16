@@ -30,7 +30,7 @@ class Account:
         return r_file[id]
 
     @classmethod
-    def get_receiver(self, id: int) -> tuple[int, str]:
+    def get_receiver(self, id: int):
 
         with open('assets/account.json', 'r', encoding='utf8') as r_file:
             r_file = json.load(r_file)
