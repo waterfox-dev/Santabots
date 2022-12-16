@@ -132,4 +132,4 @@ async def changefunc(ctx: Context, f_name, f_value) :
     await ctx.send(f"Value of `{f_name}` is now on {settings.functionnalities[f_name]}")
 
 
-bot.run(login['token'])
+bot.run(login)
