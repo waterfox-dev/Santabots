@@ -64,7 +64,7 @@ class Account:
                 return value['message']['content']
 
     @classmethod 
-    def get_members(self) -> list[int] : 
+    def get_members(self): 
         with open('assets/account.json', 'r', encoding='utf8') as r_file:
             r_file = dict(json.load(r_file))
         

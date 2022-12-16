@@ -3,7 +3,7 @@ import json
 class Text :
     
     @classmethod
-    def get(self, text: str, args_array) -> str:
+    def get(self, text: str, args_array):
         
         raw_text = str(text)
         str_ct = raw_text.count('{str')

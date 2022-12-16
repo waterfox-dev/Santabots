@@ -1,5 +1,3 @@
-from source.hintings import LoginDict
-
 from datetime import datetime
 
 import random
@@ -9,17 +7,18 @@ import json
 class Login :
     
     @classmethod
-    def load(self, maintenance:bool) -> LoginDict :
+    def load(self, maintenance:bool):
         
         with open('private/login.json', 'r', encoding='utf8') as file :
-            logins = str(json.load(file)['token'])
+            self.logins = str(json.load(file)['token'])
         
         _r_key = random.randint(0, 9223372036854775807) 
-        return LoginDict(token=logins, used_last=datetime.now(), _r_key=_r_key, maintenance=maintenance)
+        return self.logins
+       
  
 class Settings : 
     
-    def __init__(self) -> None : 
+    def __init__(self) : 
         self.load()
     
     def change_functionnalities(self, name, value) : 

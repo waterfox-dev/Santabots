@@ -1,2 +1,2 @@
-def idtoarobase(id) -> str: 
+def idtoarobase(id): 
     return f"<@{str(id)}>"
